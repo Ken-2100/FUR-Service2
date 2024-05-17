@@ -1,4 +1,50 @@
+body{
+   scroll-behavior: smooth;
+}
 
+.btn{
+   position: fixed;
+   bottom: 10px;
+   right: 0;
+   z-index: 3;
+
+ 
+}
+.offcanvas-body li:hover{
+   background: #ffffff;
+   border-radius: 10px;
+
+}
+/* .carousel{
+   margin-left: 50px;
+   margin-right: 50px;
+   
+}
+
+*/
+
+.carousel .carousel-item{
+   height: 50vh;
+}
+
+.carousel img{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+
+}
+.carousel-inner{
+   position: relative;
+    z-index: 1;
+}
+.service-gallery{
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+.card img{
+   height: 300px;
+}
 
 
 

@@ -13,107 +13,145 @@
 
 <body>
 
-<!--  Header Section -->
-<header>
+  <!-- go to top button -->
 
-    
-    <div class="go-top">
-        <a href="#">
-            <i class="fa-solid fa-turn-up"></i>  
+  <a href="#" type="button" class="btn bg-primary-subtle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708z"></path>
+</svg>
+</a>
+
+  </button>
+<!-- go to top button end here -->
+
+<!-- navbar start -->
+
+<nav class="navbar sticky-top navbar-expand-lg bg-primary-subtle fixed-top my-2 mx-5 rounded-pill">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo/paw-solid.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      FUR Service
     </a>
-</div> 
-
-
-
-<nav class="navbar navbar-expand-lg bg-secondary ">
-
-    <img src="./assets/logo/paw-solid.svg" class="rounded float-start ps-3 " alt="furlogo" height="30" >
-
-    <div class="container-fluid float-end">
-
-<!--       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <div class="collapse navbar-collapse " id="navbarNavDropdown">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo/paw-solid.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            FUR Service
+          </a>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item ">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link active" aria-current="page" href="#">About Us</a>
           </li>
          
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu ">
-              <li><a class="dropdown-item" href="#">Threatment</a></li>
-              <li><a class="dropdown-item" href="#">Groom</a></li>
-              <li><a class="dropdown-item" href="#">Pet Walk</a></li>
+              <li><a class="dropdown-item" href="Service.html">Threatment</a></li>
+              <li><a class="dropdown-item" href="Service.html">Groom</a></li>
+              <li><a class="dropdown-item" href="Service.html">Pet Walk</a></li>
               </ul>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#"> 
                     <img src="./assets/img/icon/cart.svg" alt="cart icon" height="30px">
                 </a>
               </li>
-
-            
           
-         
-            </ul>
-          </li>
-        </ul>
       </div>
     </div>
-  </nav>
-    
+  </div>
+</nav>
 
-
-<!--    
-    <div class="head-container">
-
-       
-         <div class="logo-img">
-            <a href="#"> <img src="./assets/logo/furlogo.png" alt="furlogo">
-            </a>
-        </div>
-
-        <div class="nav-btn ">
-                <ul>
-                    <li><a href="index.html"> Home</a></li>
-                    <li><a href="#"> Service</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Treatment</a></li>
-                            <li><a href="#"> Groom</a></li>
-                        </ul> 
-                    </li>
-                    <li><a href="Abouts.html"> About Us</a></li>
-                </ul>
-            </div>
-     </div> 
-    </header>
- -->
-
-    <div class="main-container">
-        <div class="bg-img-1">
-            <img src="./assets/img/hero/h1_hero.png" alt="">
-            <div class="img-1-h1">
-                <p>We Groom and Treat your Pet</p>
-                <h1>Like You, We Care For Your Pets.</h1>
-                <p><a href="Home.html">Call Now</a></p>
-
-            </div>
-        </div>
-    </div>
+<!-- navbar end -->
 
     
+    <!-- Carousel -->
 
-    <div class="gallery-container">
+    <div id="carouselExampleInterval" class="carousel slide mt-2"  data-bs-ride="carousel">
+        <div class="carousel-inner " >
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="https://loremflickr.com/1201/574?random=1" class="img-fluid d-block col-sm" alt="...">
+          </div>
+          <div class="carousel-item col-sm" data-bs-interval="3000">
+            <img src="https://loremflickr.com/1201/574?random=2" class="img-fluid d-block" alt="...">
+          </div>
+          <div class="carousel-item col-sm">
+            <img src="https://loremflickr.com/1201/574?random=3" class="img-fluid d-block" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" style="position: absolute; z-index: 2;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon  bg-secondary"  aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" style="position: absolute; z-index: 2;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon  bg-secondary" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- SERVICE GALLERY STARTS HERE -->
+
+      <div class="service-gallery">
+        <h2>Service Gallery</h2>
+      </div>
+
+      <div class="row">
+        <div class="col col-sm-3">
+          <div class="card">
+            <img src="./assets/img/gallery/gallery1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col  col-sm-3">
+          <div class="card">
+            <img src="./assets/img/gallery/gallery2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-3">
+          <div class="card ">
+            <img src="./assets/img/gallery/gallery3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col  col-sm-3">
+          <div class="card">
+            <img src="./assets/img/gallery/gallery4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+    <!-- <div class="gallery-container">
     <div class="gallery-header">
       
         <h1> Service Gallery</h1>
@@ -130,7 +168,7 @@
         <img src="./assets/img/gallery/gallery3.png" alt="" width="28%">
         <img src="./assets/img/gallery/gallery4.png" alt="">
     </div>
-</div>
+</div> -->
 
 <!-- CONTACT FORM -->
 <div class="form-container">
