@@ -12,6 +12,14 @@ html{
   
 }
 
+.btn-top{
+   position: fixed;
+   bottom: 100px;
+   right: 0px;
+   z-index: 3;
+}
+
+
 .container > .btn, .fa-circle-up{
    background: #1A4D2E ;
    color: white ;
@@ -25,6 +33,7 @@ html{
 
  
 } */
+
 .offcanvas-body li:hover{
    background: #ffffff;
    border-radius: 10px;
@@ -71,10 +80,15 @@ html{
    color: #ffffff;
 }
 
-.nav svg{
+.nav svg {
 color: #1A4D2E ;
+width: 30px; 
+height: auto;
+
+
 
 }
+
 
 /* ABOUT US PAGE CSS */
  
@@ -82,11 +96,13 @@ color: #1A4D2E ;
    color: #7ABA78 ;
 }
 
-.row .featurette-heading{
+.row .feature-heading{
    color: #1A4D2E;
 }
 
 
+
+/* PP1 CSS */
 
 /* *{
     padding: 0;
