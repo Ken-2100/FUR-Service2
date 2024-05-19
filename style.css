@@ -1,11 +1,20 @@
 body{
-   background: #F3F3F3;
+   /* background: #7AB2B2; */
    scroll-behavior: smooth;
    
 }
 html{
    font-family: Arial, Helvetica, sans-serif;
     
+}
+.navbar{
+   background: #75A47F;
+  
+}
+
+.container > .btn, .fa-circle-up{
+   background: #1A4D2E ;
+   color: white ;
 }
 
 /* .go-top .btn{
@@ -33,16 +42,50 @@ html{
    height: 50vh;
 }
 
-.carousel img{
+.carousel img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   height: 500px;
+   max-width: none;
+   object-fit: cover ;
+
+ }
+ 
+
+/* .carousel img{
    position: absolute;
    height: 100%;
    width: 100%;
 
-}
+} */
+
 .carousel-inner{
    position: relative;
     z-index: 1;
 }
+
+ .form-btn{
+   background: #1A4D2E; 
+   color: #ffffff;
+}
+
+.nav svg{
+color: #1A4D2E ;
+
+}
+
+/* ABOUT US PAGE CSS */
+ 
+.members-abt h2{
+   color: #7ABA78 ;
+}
+
+.row .featurette-heading{
+   color: #1A4D2E;
+}
+
 
 
 /* *{
